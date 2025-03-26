@@ -1,4 +1,5 @@
 .what-we-do {
+  background-color: #f2f2f2;
   display: flex;
   align-items: center;
   max-width: 1500px;
@@ -10,7 +11,7 @@
 .vertical-text {
   writing-mode: vertical-rl;
   transform: rotate(180deg);
-  font-size:55px;
+  font-size: 55px;
   font-weight: bold;
   color: #333;
   font-family: Infra-SemiBold;
@@ -44,11 +45,11 @@
 }
 
 .what-we-do-right .shifted-text p:first-child {
-  margin-bottom: 2rem
+  margin-bottom: 2rem;
 }
 
 .what-we-do-right .shifted-text p:nth-child(2) {
-  margin-bottom: 3rem
+  margin-bottom: 3rem;
 }
 
 .what-we-do-right p:last-child {
