@@ -28,6 +28,7 @@
   padding: 87px 32px;
   align-items: center;
   border-radius: 35px;
+  overflow: auto;
   justify-content: center;
   background-color: #f2f2f2;
 }
@@ -43,87 +44,4 @@
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.commit {
-  display: flex;
-  align-items: left;
-  font-weight: bold;
-  font-size: larger;
-  display: flex;
-  align-items: flex-bottom;
-}
-
-.content_engage {
-  font-display: left-bottom;
-  display: flex;
-  align-items: flex-bottom;
-}
-
-.improved_ctr {
-  font-display: left-bottom;
-  display: flex;
-  align-items: flex-bottom;
-  display: inline-block;
-  flex-wrap: wrap;
-  margin: 50px auto;
-}
-
-.ctr {
-  color: #ff6407;
-  display: flex;
-  font-weight: bold;
-  font-display: left;
-  font-size: xx-large;
-  flex-wrap: wrap;
-}
-
-.audience {
-  font-display: left-bottom;
-  display: flex;
-  align-items: flex-bottom;
-  display: inline-block;
-  flex-wrap: wrap;
-  margin: 50px;
-}
-
-.percentage {
-  color: #ff6407;
-  display: flex;
-  font-weight: bold;
-  font-size: xx-large;
-  flex-wrap: wrap;
-}
-
-.Brand-recognition {
-  font-display: left-bottom;
-  display: flex;
-  align-items: flex-bottom;
-  display: inline-block;
-  flex-wrap: wrap;
-}
-
-.percent {
-  color: #ff6407;
-  display: flex;
-  font-weight: bold;
-  font-size: xx-large;
-  flex-wrap: wrap;
-}
-
-.ldg-br {
-  color: #ff6407;
-}
-
-.internet {
-  position: absolute;
-  right: 0%;
-  height: 1px;
-  display: flex;
-  align-items: center;
-}
-
-.percent_internet {
-  position: absolute;
-  color: #ff6407;
 }

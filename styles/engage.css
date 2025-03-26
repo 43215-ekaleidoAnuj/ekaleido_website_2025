@@ -1,0 +1,47 @@
+.engagment_section {
+  padding: 6rem 8rem;
+}
+
+.engage {
+  width: 60%;
+  gap: 3rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.commit {
+  display: flex;
+  align-items: left;
+  font-size: 35px;
+  font-family: Infra-Bold;
+  display: flex;
+}
+
+.engage-figures {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.engage-figures-item {
+  display: flex;
+  padding: 2rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.engage-figures-item:not(:last-child) {
+  border-right: 1px solid #000000;
+}
+
+.ctr,
+.percent,
+.percentage {
+  color: #ff6407;
+  font-size: 96px;
+}
+
+.engage-caption {
+  font-family: Infra-Medium;
+}

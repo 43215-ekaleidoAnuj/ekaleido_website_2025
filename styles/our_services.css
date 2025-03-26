@@ -66,3 +66,62 @@
   font-size: 32px;
   font-family: Infra-Regular;
 }
+
+figure.effect-sarah {
+  background-image: linear-gradient(217.27deg, rgba(25, 25, 25, 0.18) 1.14%, rgba(132, 132, 132, 0.18) 95.89%);
+  backdrop-filter: blur(4px);
+  transition: background-image 1s;
+}
+
+figure.effect-sarah:hover {
+	background-image: linear-gradient(216.79deg, #FF6407 2.96%, #FF9250 99.82%);
+}
+
+figure.effect-sarah figcaption {
+	text-align: left;
+}
+
+figure.effect-sarah h2 {
+	position: relative;
+	overflow: hidden;
+  font-family: Infra-SemiBold;
+	padding: 0.5em 0;
+}
+
+figure h2 span {
+	font-family: Infra-Light;
+}
+
+figure.effect-sarah h2::after {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 3px;
+	background: #fff;
+	content: '';
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+	-webkit-transform: translate3d(-100%,0,0);
+	transform: translate3d(-100%,0,0);
+}
+
+figure.effect-sarah:hover h2::after {
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+figure.effect-sarah p {
+	padding: 1em 0;
+	opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(100%,0,0);
+	transform: translate3d(100%,0,0);
+}
+
+figure.effect-sarah:hover p {
+	opacity: 1;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}

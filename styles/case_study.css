@@ -64,14 +64,6 @@
   border-radius: 10px;
 }
 
-
-.engage {
-  display: grid;
-  grid-auto-flow: column;
-  margin: 0;
-  padding: 0;
-}
-
 .poster {
   display: grid;
   grid-auto-flow: column;
