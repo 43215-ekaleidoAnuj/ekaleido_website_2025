@@ -32,35 +32,41 @@
 
 .container {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 5rem;
-  flex-wrap: wrap;
+      align-items: flex-start;
+      justify-content: space-between;
+      padding: 0 5rem;
+      flex-wrap: wrap;
+      min-height: 100vh;
+      overflow: hidden;
 }
 
 .left-section {
   flex: 1;
   text-align: center;
+  position: relative;
 }
 
 .phone-image {
   max-width: 100%;
   height: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 
 .right-section {
   flex: 2;
+  margin-top: 1rem;
   padding: 0 10px;
   position: relative;
   position: relative;
-  top: -250px;
   text-align: left;
 }
 
 .right-section h1 {
-  font-size: 55px;
+  font-size: 65px;
   font-weight: 500;
-  font-family: Infra-Bold;
+  font-family: Infra-Medium;
   color: #000000;
   text-align: left;
   line-height: 1.1;
@@ -69,7 +75,7 @@
 }
 
 .right-section h1 span {
-  font-size: 55px;
+  font-size: 65px;
   display: block;
 }
 
@@ -81,18 +87,23 @@
   margin: 15px 0;
   font-family: Infra-Regular;
   font-size: 18px;
-  color: #555;
-  max-width: 500px;
+  color: #000000;
   text-align: left;
+  margin-bottom: 4rem;
 }
 
 .btn-learnmore {
-  padding: 10px 20px;
-  border: 1px solid black;
-  background: none;
+  margin-left: 0px;
+  border-radius: 30px;
+  font-weight: 600;
   cursor: pointer;
-  border-radius: 20px;
+  display: inline-block;
+  padding: 16px 40px;
+  border: none;
+  background-color: #FF6407;
+  cursor: pointer;
   font-size: 16px;
+  font-family: Infra-Regular;
 }
 
 .btn-learnmore:hover {

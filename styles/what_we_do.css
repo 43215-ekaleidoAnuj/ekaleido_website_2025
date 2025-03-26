@@ -1,17 +1,19 @@
 .what-we-do {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   max-width: 1500px;
   width: 100%;
   gap: 20px;
+  padding: 8rem 6rem;
 }
 
 .vertical-text {
   writing-mode: vertical-rl;
   transform: rotate(180deg);
-  font-size: 24px;
+  font-size:55px;
   font-weight: bold;
   color: #333;
+  font-family: Infra-SemiBold;
   letter-spacing: 2px;
   margin-left: 10px;
   margin-right: 20px;
@@ -32,7 +34,8 @@
   text-align: left;
 }
 
-.what-we-do-right p.shifted-text {
+.what-we-do-right .shifted-text p,
+.what-we-do-right .shifted-text button {
   font-size: 18px;
   max-width: 600px;
   text-align: left;
@@ -40,31 +43,17 @@
   line-height: 1.5;
 }
 
+.what-we-do-right .shifted-text p:first-child {
+  margin-bottom: 2rem
+}
+
+.what-we-do-right .shifted-text p:nth-child(2) {
+  margin-bottom: 3rem
+}
+
 .what-we-do-right p:last-child {
   font-size: 16px;
   text-align: left;
   margin-left: 250px;
   margin-top: 15px;
-}
-
-.btn-learnmore {
-  margin-left: 0px;
-}
-
-.btn-learnmore {
-  padding: 12px 30px;
-  font-size: 18px;
-  border-radius: 30px;
-  border: 2px solid black;
-  font-weight: 600;
-  background: white;
-  cursor: pointer;
-  display: inline-block;
-  margin-top: 20px;
-  margin-left: 250px;
-}
-
-.btn-learnmore:hover {
-  background: black;
-  color: white;
 }
