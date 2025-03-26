@@ -1,0 +1,43 @@
+.our-services {
+  max-width: 1514px;
+}
+.our-service-header {
+  font-weight: 500px;
+  size: 100px;
+  line-height: 144%;
+  letter-spacing: 0%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+.services-container {
+  background: url("../assets/background-img.jpeg") no-repeat center
+    center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  padding: 50px 0;
+
+  color: white;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+.services-title {
+  margin: 10 10px;
+  padding: 10 10px;
+}
+.services {
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.service-item {
+  border: 1px solid white;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+  transition: 0.3s;
+}

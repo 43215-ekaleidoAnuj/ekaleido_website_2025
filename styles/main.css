@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f5f5f5;
+  font-family: Infra-Regular;
+}
+
+@font-face {
+  font-family: Infra-Black;
+  src: url(../assets/fonts/Infra-Black.otf);
+}
+
+@font-face {
+  font-family: Infra-Bold;
+  src: url(../assets/fonts/Infra-Bold.otf);
+}
+
+@font-face {
+  font-family: Infra-Regular;
+  src: url(../assets/fonts/Infra-Regular.otf);
+}

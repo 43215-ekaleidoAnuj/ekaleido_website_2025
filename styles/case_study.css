@@ -1,0 +1,216 @@
+.engage {
+  display: grid;
+  grid-auto-flow: column;
+  margin: 0;
+  padding: 0;
+}
+
+.poster {
+  display: grid;
+  grid-auto-flow: column;
+  margin: 0;
+  padding: 0;
+}
+
+.cstds {
+  background-color: black;
+  height: auto;
+  color: white;
+  background-repeat: no-repeat;
+  display: inline-block;
+  flex-wrap: wrap;
+  padding: 20px;
+  width: fit-content;
+}
+
+.Case_Studies_header {
+  font-weight: 200px;
+  font-size: 50px;
+  line-height: 100%;
+  display: inline-block;
+  align-items: flex-start;
+  justify-content: left 0;
+}
+
+.caseStudies {
+  display: flex;
+  display: inline-block;
+  gap: 20px;
+  flex-wrap: wrap;
+  background-color: black;
+}
+
+.blueberry {
+  width: 500px;
+  height: 400px;
+  display: inline-block;
+  object-fit: cover;
+}
+
+.Mg_motors {
+  width: 500px;
+  height: 400px;
+  display: inline-block;
+  object-fit: cover;
+  flex-wrap: wrap;
+}
+
+.commit {
+  /* font-display: bottom; */
+  display: flex;
+  align-items: left;
+  font-weight: bold;
+  font-size: larger;
+  display: flex;
+  align-items: flex-bottom;
+}
+
+.content_engage {
+  font-display: left-bottom;
+  display: flex;
+  align-items: flex-bottom;
+}
+
+.improved_ctr {
+  font-display: left-bottom;
+  display: flex;
+  align-items: flex-bottom;
+  display: inline-block;
+  flex-wrap: wrap;
+  margin: 50px auto;
+}
+
+.ctr {
+  color: rgba(255, 81, 0, 0.918);
+  display: flex;
+  font-weight: bold;
+  font-display: left;
+  font-size: xx-large;
+  flex-wrap: wrap;
+}
+
+.audience {
+  font-display: left-bottom;
+  display: flex;
+  align-items: flex-bottom;
+  display: inline-block;
+  flex-wrap: wrap;
+  margin: 50px;
+}
+
+.percentage {
+  color: rgba(255, 81, 0, 0.918);
+  display: flex;
+  font-weight: bold;
+  font-size: xx-large;
+  flex-wrap: wrap;
+}
+
+.Brand-recognition {
+  font-display: left-bottom;
+  display: flex;
+  align-items: flex-bottom;
+  display: inline-block;
+  flex-wrap: wrap;
+}
+
+.percent {
+  color: rgba(255, 81, 0, 0.918);
+  display: flex;
+  font-weight: bold;
+  font-size: xx-large;
+  flex-wrap: wrap;
+}
+
+.cstds {
+  background-color: black;
+  height: auto;
+  color: white;
+  background-repeat: no-repeat;
+  display: inline-block;
+  flex-wrap: wrap;
+  padding: 20px;
+  width: fit-content;
+}
+
+.Case_std {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.photo {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 20px; /* Space between images */
+  padding: 60px;
+  margin: 20px auto;
+  position: relative;
+  width: 80%;
+  max-width: 1000px;
+  border: 2px solid #000;
+  background-image: url("/assets/background.jpg"); /* Background image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.photo img {
+  width: 100%; /* Makes images responsive within the grid */
+  max-width: 250px; /* Limits image size */
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px; /* Optional: Rounds corners */
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+  justify-self: center;
+}
+
+.study {
+  text-align: right;
+  padding-left: 50px;
+  /* margin-top: 20px; */
+}
+
+.study img {
+  width: 100px; /* Adjust size as needed */
+  height: auto;
+  border-radius: 10px;
+}
+
+.Lead_content {
+  max-width: 1200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ldg-br {
+  color: red;
+  display: block;
+}
+
+.im {
+  display: flex;
+  align-items: stretch;
+}
+
+.driving-brands {
+  background-image: url("/assets/bottom_dr.jpg");
+  background-repeat: no-repeat;
+  /* position: relative; */
+  flex: 1;
+}
+
+.internet {
+  position: absolute;
+  right: 0%;
+  height: 1px;
+  display: flex;
+  align-items: center;
+}
+
+.percent_internet {
+  position: absolute;
+  color: red;
+}
