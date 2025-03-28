@@ -8,7 +8,17 @@ body {
   background: #ffffff;
 }
 
-p, h1, h2, h3, h4, h5, h6 {
+section {
+  padding: 6rem 0;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: Infra-Light;
 }
 

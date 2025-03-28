@@ -30,7 +30,7 @@
   color: white;
 }
 
-.container {
+.landing-container {
   display: flex;
   gap: 3rem;
   align-items: flex-start;
