@@ -45,3 +45,74 @@
   align-items: center;
   justify-content: center;
 }
+
+.carousel-wrapper {
+  background: #f2f2f2;
+  position: relative !important;
+  /* margin: 20px auto; */
+  width: 100%;
+  height: 259px;
+
+  border-radius: 35px;
+}
+.carouselDriving {
+  height: 100%;
+  display: flex !important;
+  align-items: center !important;
+}
+.slick-slide {
+  margin: 10px;
+}
+.slick-slide img {
+  width: 100%;
+}
+.slick-dots {
+  position: absolute !important;
+  top: auto !important;
+  bottom: 30px !important;
+  width: 100%;
+  text-align: center;
+}
+.slick-dots li button:before {
+  font-size: 10px !important;
+  color: #ff6407 !important;
+  gap: 1px !important;
+}
+
+/* Positioning the Prev and Next buttons beside the dots */
+.slick-prev,
+.slick-next {
+  position: absolute !important;
+  top: auto !important;
+  bottom: 30px !important;
+  z-index: 10;
+  width: 24px !important;
+  height: 24px !important;
+  color: red !important;
+  background: #d9d9d9 !important;
+  border-radius: 50%;
+}
+.slick-prev {
+  left: calc(50% - 80px) !important;
+}
+.slick-next {
+  right: calc(50% - 80px) !important;
+}
+.slick-prev:before,
+.slick-next:before {
+  margin: auto;
+
+  content: "" !important;
+  display: block !important;
+  width: 8px !important;
+  height: 8px !important;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+}
+.slick-prev:before {
+  background-image: url("../assets/images/Polygon\ 1.png"); /* Right arrow SVG */
+}
+.slick-next:before {
+  background-image: url("../assets/images/Polygon\ 2.png"); /* Left arrow SVG */
+}
+/* Styling the dots */
