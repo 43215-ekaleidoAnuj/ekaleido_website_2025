@@ -55,33 +55,33 @@
 
   border-radius: 35px;
 }
-.carouselDriving {
+.carousel-one .carouselDriving {
   height: 100%;
   display: flex !important;
   align-items: center !important;
 }
-.slick-slide {
+.carousel-one .slick-slide {
   margin: 10px;
 }
-.slick-slide img {
+.carousel-one .slick-slide img {
   width: 100%;
 }
-.slick-dots {
+.carousel-one .slick-dots {
   position: absolute !important;
   top: auto !important;
   bottom: 30px !important;
   width: 100%;
   text-align: center;
 }
-.slick-dots li button:before {
+.carousel-one .slick-dots li button:before {
   font-size: 10px !important;
   color: #ff6407 !important;
   gap: 1px !important;
 }
 
 /* Positioning the Prev and Next buttons beside the dots */
-.slick-prev,
-.slick-next {
+.carousel-one .slick-prev,
+.carousel-one .slick-next {
   position: absolute !important;
   top: auto !important;
   bottom: 30px !important;
@@ -92,14 +92,14 @@
   background: #d9d9d9 !important;
   border-radius: 50%;
 }
-.slick-prev {
+.carousel-one .slick-prev {
   left: calc(50% - 80px) !important;
 }
-.slick-next {
+.carousel-one .slick-next {
   right: calc(50% - 80px) !important;
 }
-.slick-prev:before,
-.slick-next:before {
+.carousel-one .slick-prev:before,
+.carousel-one .slick-next:before {
   margin: auto;
 
   content: "" !important;
@@ -109,10 +109,80 @@
   background-size: contain !important;
   background-repeat: no-repeat !important;
 }
-.slick-prev:before {
+.carousel-one .slick-prev:before {
   background-image: url("../assets/images/Polygon\ 1.png"); /* Right arrow SVG */
 }
-.slick-next:before {
+.carousel-one .slick-next:before {
   background-image: url("../assets/images/Polygon\ 2.png"); /* Left arrow SVG */
 }
-/* Styling the dots */
+
+.carousel-wrapper-two {
+  /* background: #f2f2f2; */
+  position: relative !important;
+  width: 500px;
+  margin-left: 25px;
+  /* width: 100%;
+  height: 259px; */
+
+  /* border-radius: 35px; */
+}
+.carousel-two .carouselDrivingtwo {
+  height: 100%;
+  display: flex !important;
+  align-items: center !important;
+}
+.carousel-two .slick-slide {
+  margin: 10px;
+}
+.carousel-two .slick-slide img {
+  /* width: 100%; */
+  /* max-width: 400px; */
+  width: 140px;
+  opacity: 0.2; /* Optional: make it slightly faded */
+  transform: scale(0.8);
+}
+.carousel-two .slick-center {
+  margin: 10px;
+}
+.carousel-two .slick-center img {
+  transform: scale(1.2);
+  /* border-radius: 0px; */
+  opacity: 1; /* Optional: make it slightly faded */
+  width: 100%;
+}
+
+/* Positioning the Prev and Next buttons beside the dots */
+.carousel-two .slick-prev,
+.carousel-two .slick-next {
+  /* position: absolute !important; */
+  /* top: auto !important;
+  bottom: 30px !important; */
+  /* z-index: 10; */
+  /* width: 60px !important;
+  height: 60px !important; */
+  /* background: #d9d9d9 !important; */
+  /* border-radius: 50%; */
+}
+/* .carousel-two .slick-prev {
+  left: calc(50% - 80px) !important;
+}
+.carousel-two .slick-next {
+  right: calc(50% - 80px) !important;
+} */
+.carousel-two .slick-prev:before,
+.carousel-two .slick-next:before {
+  margin: auto;
+
+  content: "" !important;
+  display: block !important;
+  width: 40px !important;
+  height: 40px !important;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+}
+.carousel-two .slick-prev:before {
+  background-image: url("../assets/images/arrow_left.png"); /* Right arrow SVG */
+}
+.carousel-two .slick-next:before {
+  background-image: url("../assets/images/arrow_right.png"); /* Left arrow SVG */
+}
