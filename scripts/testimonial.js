@@ -1,85 +1,130 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const testimonialsSection = document.querySelector(".testimonials");
-  const leftCol = document.querySelector("#left-col");
-  const middleCol = document.querySelector("#middle-col");
-  const rightCol = document.querySelector("#right-col");
+ // Register ScrollTrigger plugin
+ gsap.registerPlugin(ScrollTrigger);
 
-  // Optimize for smooth animations
-  [leftCol, middleCol, rightCol].forEach(col => {
-    col.style.willChange = "transform";
-  });
+ document.addEventListener('DOMContentLoaded', function() {
+   // Set initial positions
+   gsap.set("#left-col", { y: -550 });
+   gsap.set("#middle-col", { y: 550 });
+   gsap.set("#right-col", { y: -550 });
 
-  let isInViewport = false;
-  let animationFrameId = null;
-  let observer = null;
+   // Create the parallax animation
+   gsap.to("#left-col", {
+     y: 550,
+     ease: "none",
+     scrollTrigger: {
+       trigger: ".testimonials",
+       start: "top bottom",
+       end: "bottom top",
+       scrub: 1
+     }
+   });
 
-  // Calculate the scrollable range within the testimonials section
-  const getScrollProgress = () => {
-    const sectionRect = testimonialsSection.getBoundingClientRect();
-    const viewportHeight = window.innerHeight;
+   gsap.to("#middle-col", {
+     y: -550,
+     ease: "none",
+     scrollTrigger: {
+       trigger: ".testimonials",
+       start: "top bottom",
+       end: "bottom top",
+       scrub: 1
+     }
+   });
+
+   gsap.to("#right-col", {
+     y: 550,
+     ease: "none",
+     scrollTrigger: {
+       trigger: ".testimonials",
+       start: "top bottom",
+       end: "bottom top",
+       scrub: 1
+     }
+   });
+
+   // Add subtle card animations
+   const cards = gsap.utils.toArray(".testimonials-card");
+   cards.forEach(card => {
+     gsap.from(card, {
+       y: 100,
+       opacity: 0,
+       duration: 0.8,
+       scrollTrigger: {
+         trigger: card,
+         start: "top 80%",
+         toggleActions: "play none none none"
+       }
+     });
+   });
+
+   // Orange shade animations
+   gsap.to(".orange-top-right", {
+     x: 50,
+     y: 50,
+     scrollTrigger: {
+       trigger: ".testimonials",
+       start: "top bottom",
+       end: "bottom top",
+       scrub: 1
+     }
+   });
+
+   gsap.to(".orange-bottom-left", {
+     x: -50,
+     y: -50,
+     scrollTrigger: {
+       trigger: ".testimonials",
+       start: "top bottom",
+       end: "bottom top",
+       scrub: 1
+     }
+   });
+ });
+
+
+
+
+
+
+ document.addEventListener("DOMContentLoaded", function () {
+  const section = document.getElementById("insights-section");
+  const bars = document.querySelectorAll(".bar");
+  
+  function handleScroll() {
+    const sectionPos = section.getBoundingClientRect().top;
+    const screenPos = window.innerHeight / 1.3;
     
-    // How far the section top is from the viewport bottom (entering)
-    // and how far the section bottom is from the viewport top (exiting)
-    const scrollStart = viewportHeight * 0.2; // Start when 20% visible
-    const scrollEnd = viewportHeight * 0.8;   // End when 80% visible
+    if (sectionPos < screenPos) {
+      section.style.opacity = "1";
+      section.style.transform = "translateY(0)";
+      bars.forEach(bar => bar.style.transform = "scaleY(1)");
+      window.removeEventListener("scroll", handleScroll);
+    }
+  }
+  
+  window.addEventListener("scroll", handleScroll);
+});
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const section = document.getElementById("graph-section");
+  const line = document.getElementById("graph-line");
+  const points = [document.getElementById("point1"), document.getElementById("point2"), document.getElementById("point3")];
+  const dashedLine = document.getElementById("dashed-line");
+  
+  function handleScroll() {
+    const sectionPos = section.getBoundingClientRect().top;
+    const screenPos = window.innerHeight / 1.3;
     
-    // Calculate progress (0 to 1) based on scroll position within the section
-    let progress = (sectionRect.top - scrollStart) / (scrollEnd - scrollStart);
-    progress = Math.max(0, Math.min(2, 1 - progress)); // Clamp between 0 and 1
-    
-    return progress;
-  };
-
-  const animateTestimonials = () => {
-    if (!isInViewport) return;
-
-    const progress = getScrollProgress();
-    const maxMovement = 100; // Adjust this to control how far columns move (in pixels)
-    console.log(progress, maxMovement)
-    leftCol.style.transform = `translateY(${progress * maxMovement}px)`;
-    middleCol.style.transform = `translateY(-${progress * maxMovement}px)`;
-    rightCol.style.transform = `translateY(${progress * maxMovement}px)`;
-  };
-
-  const debouncedAnimate = () => {
-    if (animationFrameId) cancelAnimationFrame(animationFrameId);
-    animationFrameId = requestAnimationFrame(animateTestimonials);
-  };
-
-  const handleIntersection = (entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        isInViewport = true;
-        debouncedAnimate();
-        window.addEventListener("scroll", debouncedAnimate);
-      } else {
-        if (isInViewport) {
-          isInViewport = false;
-          window.removeEventListener("scroll", debouncedAnimate);
-          
-          // Reset positions when leaving viewport
-          [leftCol, middleCol, rightCol].forEach(col => {
-            col.style.transform = "translateY(0)";
-          });
-        }
-      }
-    });
-  };
-
-  observer = new IntersectionObserver(handleIntersection, { 
-    threshold: 0.2,
-    rootMargin: "0px 0px -100px 0px" // Slight bottom offset for early trigger
-  });
-
-  observer.observe(testimonialsSection);
-
-  // Cleanup (for SPAs)
-  const cleanup = () => {
-    if (observer) observer.disconnect();
-    window.removeEventListener("scroll", debouncedAnimate);
-    if (animationFrameId) cancelAnimationFrame(animationFrameId);
-  };
-
-  // Uncomment if needed in an SPA:
-  // window.addEventListener("beforeunload", cleanup);
+    if (sectionPos < screenPos) {
+      section.style.opacity = "1";
+      section.style.transform = "translateY(0)";
+      line.style.strokeDashoffset = "0";
+      points.forEach(point => point.style.opacity = "1");
+      dashedLine.style.opacity = "1";
+      window.removeEventListener("scroll", handleScroll);
+    }
+  }
+  
+  window.addEventListener("scroll", handleScroll);
 });
