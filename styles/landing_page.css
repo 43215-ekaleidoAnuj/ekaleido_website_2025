@@ -16,6 +16,8 @@
 
 .btn-talk,
 .btn-menu {
+  text-decoration: none;
+  color: #000;
   padding: 10px 20px;
   border: 1px solid black;
   background: none;
