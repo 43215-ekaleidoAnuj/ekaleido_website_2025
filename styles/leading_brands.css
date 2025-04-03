@@ -52,6 +52,12 @@
   font-size: 22px;
 }
 
+
+.carouselDrivingtwo .slick-slide:not(.slick-center) img {
+  opacity: 0.7;
+  transform: scale(0.5);
+}
+
 .carousel-wrapper {
   background: #f2f2f2;
   position: relative !important;
@@ -218,6 +224,13 @@
         margin-bottom: 30px;
       }
 
+      .carouselDrivingtwo .slick-center img {
+        transform: scale(1);
+      }
+
+      .img-phone {
+        margin-top: 50px;
+      }
      
 
 }

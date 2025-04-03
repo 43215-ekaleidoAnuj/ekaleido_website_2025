@@ -5,6 +5,7 @@ $(document).ready(function(){
     slidesToScroll: 5, // Move 5 images at a time
     dots: true,
     centerPadding: '30px',
+    focusOnSelect: true,
     centerMode: true,
     infinite: true, // Infinite looping
     arrows: true // Show navigation arrows
@@ -13,6 +14,7 @@ $(document).ready(function(){
    dots: false,
    arrows: true,
    slidesToShow: 3,
+   centerMode: true,
    slidesToScroll: 3,
     // Ensures middle slide can be styled uniquely
    centerPadding: "0", // Remove extra spacing

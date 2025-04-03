@@ -98,6 +98,12 @@
 
 
 @media (max-width:500px) {
+
+  .phone-screen-img {
+   
+    height: 66%;
+    
+}
  
   .our-work-wrapper{
     flex-direction: column;
