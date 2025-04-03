@@ -208,14 +208,17 @@ figure.effect-sarah:hover p {
   }
   .services-title {
     font-size: 36px;
+    margin-bottom: 60px;
   }
   .effect-sarah.service-item{
-    width: 95%!important;
+    width: 90%!important;
     height: 333px;
   }
   .services-wrapper 
   .slick-list{
     height: 333px!important;
   }
+
+
   
 }

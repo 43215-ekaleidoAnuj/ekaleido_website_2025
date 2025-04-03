@@ -6,3 +6,18 @@
     position: absolute;
     bottom: 22px;
 }
+
+
+
+@media (max-width:500px) {
+    .graphline{
+        
+        width: 222px;
+        margin-top: 49px;
+    
+    }
+    .graphparaph{
+        font-size: 11px;
+        margin-bottom: 0;
+    }
+}

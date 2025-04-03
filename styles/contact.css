@@ -188,4 +188,9 @@
 .major-right {
   display: none;
 }
+
+.btn {
+ 
+  font-size: 3.2vw;
+}
 }
