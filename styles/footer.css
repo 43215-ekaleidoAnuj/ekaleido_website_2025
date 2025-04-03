@@ -60,3 +60,40 @@
   font-size: 12px;
   color: white;
 }
+
+
+@media (max-width:500px) {
+    #contact{
+     
+      padding: 3rem 1rem;
+    }
+    #contact .row{
+      display: block!important;
+      padding: 10px;
+    }
+
+    .social-icons{
+      margin: 30px 0;
+    }
+    .col-3{
+      width: 100%;
+    }
+    .container-footer .sidebar{
+      display: initial
+    }
+    .nav-links{
+      padding: 0;
+      margin-bottom: 30px;
+    }
+   .content{
+    margin-top: 30px;
+   }
+
+   .contact-right-section {
+    
+    padding: 40px 1px;
+}
+
+
+   
+}

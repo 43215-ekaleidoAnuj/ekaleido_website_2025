@@ -121,3 +121,95 @@ figure.effect-sarah:hover p {
 	-webkit-transform: translate3d(0,0,0);
 	transform: translate3d(0,0,0);
 }
+
+.mobServices{
+  display: none;
+}
+
+.deskServices{
+  display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Active screen style */
+.service-itemmain.slick-active .service-item {
+  background-image: linear-gradient(216.79deg, #FF6407 2.96%, #FF9250 99.82%);
+  
+}
+
+.custom-arrows {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.slick-prev-custom, 
+.slick-next-custom {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.slick-prev-custom:hover, 
+.slick-next-custom:hover {
+  background: #f0f0f0;
+}
+
+.slick-prev-custom svg, 
+.slick-next-custom svg {
+  display: block;
+}
+
+/* Hide default slick arrows */
+.slick-arrow {
+  display: none !important;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .service-item {
+    height: auto;
+    min-height: 180px;
+    color: #000000;
+    text-align: left;
+  }
+}
+@media (max-width:500px) {
+  .mobServices{
+    display: block;
+  }
+  .service-item h2{
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  
+  .deskServices{
+    display: none;
+  }
+  .services-title {
+    font-size: 36px;
+  }
+  .effect-sarah.service-item{
+    width: 95%!important;
+  }
+  
+}

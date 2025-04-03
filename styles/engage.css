@@ -75,3 +75,40 @@
 .img-down {
   transform: translateY(20px); /* Initial offset */
 }
+
+
+
+@media (max-width:500px) {
+  .commit {
+    font-size: 25px;
+}
+  .engage{
+    width: 100%;
+    margin-top: 175px;
+  }
+  
+  .ctr, .percent, .percentage {
+    font-size: 31px;
+  }
+  .engage-figures-item {
+    padding: 1rem;
+  }
+  .engage-caption {
+    font-size: 12px;
+}
+
+
+.imgstrip {
+  right: -100%;
+  width: 83%;
+  top: -52%;
+  transform: rotate(-61deg);
+  height: 150%;
+}
+.imgstrip img, .imgstrip div {
+  width: 29%;
+}
+
+
+
+}

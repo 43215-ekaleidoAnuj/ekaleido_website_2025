@@ -193,3 +193,31 @@
 .carousel-two .slick-next:before {
   background-image: url("../assets/images/arrow_right.png"); /* Left arrow SVG */
 }
+
+
+
+@media (max-width:500px) {
+  .driving{
+    display: initial
+  }
+  .driving-text-content h2 {
+    font-size: 32px;}
+    .lead-content {
+    
+      font-size: 11px;}
+      
+      .sectiondrive{
+        padding: 5rem 30px;
+      }
+
+      .parasection{
+        margin-bottom: 40px;
+      }
+
+      .insights{
+        margin-bottom: 30px;
+      }
+
+     
+
+}

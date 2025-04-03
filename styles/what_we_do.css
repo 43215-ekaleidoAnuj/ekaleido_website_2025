@@ -78,3 +78,37 @@
   background: black;
   color: white;
 }
+
+
+
+@media (max-width:500px) {
+  .what-we-do-right p:first-child {
+    font-size: 13px;
+    margin-bottom: 3rem;
+
+  }
+
+  .what-we-do-right .shifted-text p,
+  .what-we-do-right .shifted-text button {
+    font-size: 11px;
+    margin-left: 0;
+  }
+
+  .what-we-do-right .shifted-text p:first-child {
+    margin-bottom: 2rem;
+    margin-left: 0px;
+  }
+
+  .vertical-text {
+
+    font-size: 21px;
+    transform: rotate(0);
+    
+  }
+
+  .what-we-do-right {
+    margin-left: 12px;
+  }
+
+
+}

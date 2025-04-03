@@ -154,3 +154,38 @@
   font-size: 16px;
   color: black;
 }
+
+
+@media (max-width:500px) {
+  .contact-container {
+    padding: 0rem 1rem;
+  }
+  .contact-left-section h1 {
+    font-size: 28px;
+   
+}
+.sub-text {
+  font-size: 14px;
+  margin-top: 0px;
+}
+.contact-info {
+  font-size: 3.2vw;
+}
+
+.major-right-container {
+ border-top: 1px solid #CCC;
+  padding-left: 0;
+  padding-right: 0;
+
+}
+.contact-text{
+ padding-top: 30px;
+}
+
+.contact-left-section{
+  padding: 8rem 0;
+}
+.major-right {
+  display: none;
+}
+}

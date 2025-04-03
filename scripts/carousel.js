@@ -4,16 +4,17 @@ $(document).ready(function(){
     slidesToShow: 5,  // Show 5 images at a time
     slidesToScroll: 5, // Move 5 images at a time
     dots: true,
-    centerMode: false,
-  infinite: true, // Infinite looping
+    centerPadding: '30px',
+    centerMode: true,
+    infinite: true, // Infinite looping
     arrows: true // Show navigation arrows
   });
   $('.carouselDrivingtwo').slick({
    dots: false,
    arrows: true,
    slidesToShow: 3,
-   slidesToScroll: 1,
-   centerMode: true, // Ensures middle slide can be styled uniquely
+   slidesToScroll: 3,
+    // Ensures middle slide can be styled uniquely
    centerPadding: "0", // Remove extra spacing
 });
 $(".carouselDrivingtwo").on("afterChange", function (event, slick, currentSlide) {

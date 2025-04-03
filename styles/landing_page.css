@@ -112,3 +112,40 @@
   background: black;
   color: white;
 }
+
+@media (max-width:500px) {
+  .landing-container{
+    flex-direction: column-reverse;
+    padding: 0 1rem;
+  }
+  .right-section{
+    text-align: center;
+    margin-top: 0rem;
+    flex: 0;
+
+  }
+  .right-section h1 {
+    font-size: 33px;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  .right-section p{
+    text-align: center;
+    width: 100%;
+    margin: auto 0 49px;
+    font-size: 11px;
+  }
+  .phone-image {
+    max-width: 62%;
+    left: -55px;
+    margin: auto;
+    
+}
+.left-section {
+  flex: 1;
+  width: 400px;
+}
+.bannersection{
+  padding: 3rem 0 0 ;
+}
+}
