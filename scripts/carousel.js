@@ -3,12 +3,24 @@ $(document).ready(function(){
      lazyLoad: 'ondemand',
     slidesToShow: 5,  // Show 5 images at a time
     slidesToScroll: 5, // Move 5 images at a time
-    dots: true,
+    dots: false,
     centerPadding: '30px',
     focusOnSelect: true,
     centerMode: true,
     infinite: true, // Infinite looping
-    arrows: true // Show navigation arrows
+    arrows: true, // Show navigation arrows
+    responsive: [
+     
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          centerMode: true,
+          centerPadding: '10px'
+        }
+      }
+    ]
   });
   $('.carouselDrivingtwo').slick({
    dots: false,

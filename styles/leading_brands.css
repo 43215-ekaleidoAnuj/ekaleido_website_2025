@@ -53,7 +53,7 @@
 }
 
 
-.carouselDrivingtwo .slick-slide:not(.slick-center) img {
+.carousel-wrapper-two .slick-slide:not(.slick-center) img {
   opacity: 0.7;
   transform: scale(0.5);
 }

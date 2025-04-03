@@ -20,4 +20,10 @@
         font-size: 11px;
         margin-bottom: 0;
     }
+
+    .carouselresponsivedriving.slick-initialized.slick-slider {
+        padding: 81px 0;
+        background: #f2f2f2;
+        border-radius: 37px;
+    }
 }

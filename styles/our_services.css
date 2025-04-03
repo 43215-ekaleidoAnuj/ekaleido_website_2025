@@ -144,7 +144,6 @@ figure.effect-sarah:hover p {
 
 
 
-
 /* Active screen style */
 .service-itemmain.slick-active .service-item {
   background-image: linear-gradient(216.79deg, #FF6407 2.96%, #FF9250 99.82%);
@@ -181,9 +180,6 @@ figure.effect-sarah:hover p {
 }
 
 /* Hide default slick arrows */
-.slick-arrow {
-  display: none !important;
-}
 
 /* Mobile responsive */
 @media (max-width: 768px) {
@@ -193,6 +189,10 @@ figure.effect-sarah:hover p {
     color: #000000;
     text-align: left;
   }
+  .services-slider .slick-arrow {
+    display: none !important;
+  }
+  
 }
 @media (max-width:500px) {
   .mobServices{
