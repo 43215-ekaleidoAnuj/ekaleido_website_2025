@@ -105,6 +105,21 @@ $(document).ready(function () {
   $(".case-slick-next-custom").click(function () {
     $(".case-study-slider").slick("slickNext");
   });
+
+  // testimonials-slider
+  $(".testimonials-slider").slick({
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    centerMode: true,
+    centerPadding: "0",
+    slidesToScroll: 1,
+    adaptiveHeight: true,
+    arrows: true,
+    autoplay: true,
+    cssEase: "ease-in",
+  });
 });
 
 // Slick version 1.5.8

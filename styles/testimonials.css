@@ -41,6 +41,36 @@
   align-items: center;
 }
 
+.testimonials-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  gap: 44px;
+  overflow: visible;
+  will-change: transform;
+}
+
+@media (max-width: 768px) {
+  .testimonials-container {
+    position: relative;
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .testimonials-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    gap: 44px;
+    overflow: visible;
+    will-change: transform;
+  }
+}
+
 .testimonials-column {
   display: flex;
   flex-direction: column;
@@ -67,7 +97,7 @@
   text-align: center;
   color: #fff;
   width: 100%;
-  min-height: 500px;
+  min-height: 350px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;

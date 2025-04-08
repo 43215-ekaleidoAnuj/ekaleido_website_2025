@@ -22,6 +22,12 @@ h6 {
   font-family: Infra-Light;
 }
 
+strong,
+b,
+.bold {
+  font-family: Infra-SemiBold;
+}
+
 @font-face {
   font-family: Infra-Black;
   src: url(../assets/imagesfonts/Infra-Black.otf);

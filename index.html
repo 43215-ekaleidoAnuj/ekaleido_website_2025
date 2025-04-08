@@ -99,6 +99,7 @@
       </div>
     </section>
 
+    <!-- SERVICE SECTION STARTS -->
     <section id="our_services_desk" class="services-container deskServices">
       <div class="container">
         <div class="services-wrapper">
@@ -230,6 +231,7 @@
         </div>
       </div>
     </section>
+    <!-- SERVICE SECTION ENDS -->
 
     <section class="engagment_section">
       <div class="container">
@@ -439,22 +441,67 @@
       </div>
     </section>
 
-    <section id="case-study" class="case_std deskServices">
-      <div class="container">
+    <!-- CASE STUDY STARTS -->
+    <section id="case-study" class="case_std ">
+      <div class="container deskServices">
         <h2>Case Studies</h2>
         <div class="photos">
-          <img src="/assets/images/blackberrys_img.png" alt="blackberrys" />
-          <img src="/assets/images/mg_motors.png" alt="mg_motors" />
-          <img src="/assets/images/converse_img.png" alt="converse" />
-          <img src="/assets/images/hyundai.png" alt="hyundai" />
-          <img src="/assets/images/wForWomen.png" alt="wForWomen" />
-          <img src="/assets/images/godrej1.png" alt="godrej" />
+          <article class="case-study-card"
+            data-title="Blackberrys"
+            data-engagement-rate="2.25"
+            data-ctr="1.89"
+            data-objective="Engagement through In-ad Product view & promotion of brand with CTA leading to the brand E-Commerce website. Awareness Campaign for BlackBerry’s along with In-ad collection view option to enhance the shopping experience"
+            data-img-src="/assets/images/blackberrys_img.png">
+            <img src="/assets/images/blackberrys_img.png" alt="blackberrys" />
+          </article>
+          <article class="case-study-card"
+            data-title="MG Motors"
+            data-engagement-rate="2.25"
+            data-ctr="1.89"
+            data-objective="Building online presence of MG Motors' Black Edition Storm with our interactive ad, highlighting its distinctive style and driving capabilities.
+            Invites users to explore its cutting-edge features through an engaging and immersive experience"
+            data-img-src="/assets/images/mg_motors.png">
+            <img
+              src="/assets/images/mg_motors.png" alt="mg_motors" />
+          </article>
+          <article class="case-study-card"
+            data-title="Blackberrys"
+            data-engagement-rate="2.25"
+            data-ctr="1.89"
+            data-objective="Engagement through In-ad Product view & promotion of brand with CTA leading to the brand E-Commerce website. Awareness Campaign for BlackBerry’s along with In-ad collection view option to enhance the shopping experience"
+            data-img-src="/assets/images/converse_img.png">
+            <img
+              src="/assets/images/converse_img.png" alt="converse" />
+          </article>
+          <article class="case-study-card"
+            data-title="Blackberrys"
+            data-engagement-rate="2.25"
+            data-ctr="1.89"
+            data-objective="Engagement through In-ad Product view & promotion of brand with CTA leading to the brand E-Commerce website. Awareness Campaign for BlackBerry’s along with In-ad collection view option to enhance the shopping experience"
+            data-img-src="/assets/images/hyundai.png">
+            <img src="/assets/images/hyundai.png" alt="hyundai" />
+          </article>
+          <article class="case-study-card"
+            data-title="Blackberrys"
+            data-engagement-rate="2.25"
+            data-ctr="1.89"
+            data-objective="Engagement through In-ad Product view & promotion of brand with CTA leading to the brand E-Commerce website. Awareness Campaign for BlackBerry’s along with In-ad collection view option to enhance the shopping experience"
+            data-img-src="/assets/images/wForWomen.png">
+            <img src="/assets/images/wForWomen.png" alt="wForWomen" />
+          </article>
+          <article class="case-study-card"
+            data-title="Blackberrys"
+            data-engagement-rate="2.25"
+            data-ctr="1.89"
+            data-objective="Engagement through In-ad Product view & promotion of brand with CTA leading to the brand E-Commerce website. Awareness Campaign for BlackBerry’s along with In-ad collection view option to enhance the shopping experience"
+            data-img-src="/assets/images/godrej1.png">
+            <img src="/assets/images/godrej1.png" alt="godrej" />
+          </article>
           <!-- <button class="more-studies-btn">More studies</button> -->
         </div>
       </div>
-    </section>
-    <section id="case-study" class="case_std mobServices">
-      <div class="container">
+
+      <div class="container mobServices">
         <h2>Case Studies</h2>
         <div class="row case-study-wrapper">
           <div class="col-12">
@@ -514,7 +561,28 @@
           </button>
         </div>
       </div>
+      <aside id="modalOverlay">
+        <div class="case-study-modal">
+          <button class="modal-close-btn" id="closeModal">&times;</button>
+          <div class="modal-content-wrapper">
+            <h2 id="modalTitle"></h2>
+            <div class="modal-content-body">
+              <div class="modal-details">
+                <p id="modalDescription"></p>
+                <p>Click Through Rate: <span
+                    id="ctr"><strong></strong></span></p>
+                <p>Engagement Rate: <span
+                    id="engagementRate"><strong></strong></span></p>
+                <ul id="featureList"></ul>
+              </div>
+              <img id="caseImg" src alt="case-img" />
+            </div>
+          </div>
+        </div>
+      </aside>
     </section>
+
+    <!-- CASE STUDY ENDS -->
 
     <section class="sectiondrive">
       <div class="container driving">
@@ -900,47 +968,127 @@
       </div>
     </section>
 
-    <section class="testimonials">
-      <div class="orange-shade orange-top-right"></div>
-      <div class="container">
-        <div class="testimonials-container">
-          <div id="left-col" class="testimonials-column">
-            <div class="testimonials-card">
-              <div class="profile-pic"></div>
-              <h2>Abhishiek Bhardwaj</h2>
-              <h3>CEO</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
+    <!-- TESTIMONIALS STARTS -->
+    <section class="deskServices">
+      <div class="testimonials ">
+        <div class="orange-shade orange-top-right"></div>
+        <div class="container">
+          <div class="testimonials-container">
+            <div id="left-col" class="testimonials-column">
+              <div class="testimonials-card">
+                <div class="profile-pic"></div>
+                <h2>Abhishiek Bhardwaj</h2>
+                <h3>CEO</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do
+                  eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              </div>
+              <div class="testimonials-card">
+                <div class="profile-pic"></div>
+                <h2>Abhishiek Bhardwaj</h2>
+                <h3>CEO</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do
+                  eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              </div>
+              <div class="testimonials-card">
+                <div class="profile-pic"></div>
+                <h2>Abhishiek Bhardwaj</h2>
+                <h3>CEO</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do
+                  eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              </div>
             </div>
-            <div class="testimonials-card">
-              <div class="profile-pic"></div>
-              <h2>Abhishiek Bhardwaj</h2>
-              <h3>CEO</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
+
+            <div id="middle-col" class="testimonials-column">
+              <div class="testimonials-card">
+                <div class="profile-pic"></div>
+                <h2>Abhishiek Bhardwaj</h2>
+                <h3>CEO</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do
+                  eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              </div>
+              <div class="testimonials-card">
+                <div class="profile-pic"></div>
+                <h2>Abhishiek Bhardwaj</h2>
+                <h3>CEO</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do
+                  eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              </div>
+              <div class="testimonials-card">
+                <div class="profile-pic"></div>
+                <h2>Abhishiek Bhardwaj</h2>
+                <h3>CEO</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do
+                  eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              </div>
             </div>
-            <div class="testimonials-card">
-              <div class="profile-pic"></div>
-              <h2>Abhishiek Bhardwaj</h2>
-              <h3>CEO</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
+
+            <div id="right-col" class="testimonials-column">
+              <div class="testimonials-card">
+                <div class="profile-pic"></div>
+                <h2>Abhishiek Bhardwaj</h2>
+                <h3>CEO</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do
+                  eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              </div>
+              <div class="testimonials-card">
+                <div class="profile-pic"></div>
+                <h2>Abhishiek Bhardwaj</h2>
+                <h3>CEO</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do
+                  eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              </div>
+              <div class="testimonials-card">
+                <div class="profile-pic"></div>
+                <h2>Abhishiek Bhardwaj</h2>
+                <h3>CEO</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do
+                  eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              </div>
             </div>
           </div>
-
-          <div id="middle-col" class="testimonials-column">
+        </div>
+        <div class="orange-shade orange-bottom-left"></div>
+      </div>
+    </section>
+    <section class="mobServices">
+      <div class="testimonials">
+        <div class="orange-shade orange-top-right"></div>
+        <div class="container testimonials-container">
+          <div class="testimonials-slider testimonials-row">
             <div class="testimonials-card">
               <div class="profile-pic"></div>
               <h2>Abhishiek Bhardwaj</h2>
               <h3>CEO</h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </p>
             </div>
@@ -949,7 +1097,8 @@
               <h2>Abhishiek Bhardwaj</h2>
               <h3>CEO</h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </p>
             </div>
@@ -958,45 +1107,17 @@
               <h2>Abhishiek Bhardwaj</h2>
               <h3>CEO</h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
-            </div>
-          </div>
-
-          <div id="right-col" class="testimonials-column">
-            <div class="testimonials-card">
-              <div class="profile-pic"></div>
-              <h2>Abhishiek Bhardwaj</h2>
-              <h3>CEO</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
-            </div>
-            <div class="testimonials-card">
-              <div class="profile-pic"></div>
-              <h2>Abhishiek Bhardwaj</h2>
-              <h3>CEO</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
-            </div>
-            <div class="testimonials-card">
-              <div class="profile-pic"></div>
-              <h2>Abhishiek Bhardwaj</h2>
-              <h3>CEO</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </p>
             </div>
           </div>
         </div>
+        <div class="orange-shade orange-bottom-left"></div>
       </div>
-      <div class="orange-shade orange-bottom-left"></div>
     </section>
+    <!-- TESTIMONIALS ENDS -->
 
     <section class="contact-container">
       <div class="container">
@@ -1248,5 +1369,6 @@
     <script src="./scripts/strip.js"></script>
     <script src="./scripts/testimonial.js"></script>
     <script src="./scripts/contact.js"></script>
+    <script src="./scripts/caseStudy.js"></script>
   </body>
 </html>
