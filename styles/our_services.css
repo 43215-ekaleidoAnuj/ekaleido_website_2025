@@ -130,20 +130,6 @@ figure.effect-sarah:hover p {
   display: block;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Active screen style */
 .service-itemmain.slick-active .service-item {
   background-image: linear-gradient(216.79deg, #FF6407 2.96%, #FF9250 99.82%);
@@ -158,6 +144,8 @@ figure.effect-sarah:hover p {
   margin-left: -34px;
 }
 
+.case-slick-next-custom,
+.case-slick-prev-custom,
 .slick-prev-custom, 
 .slick-next-custom {
   background: none;
@@ -169,6 +157,8 @@ figure.effect-sarah:hover p {
   background: #f0f0f0;
 }
 
+.case-slick-next-custom:hover,
+.case-slick-prev-custom:hover,
 .slick-prev-custom:hover, 
 .slick-next-custom:hover {
   background: #FF6407;

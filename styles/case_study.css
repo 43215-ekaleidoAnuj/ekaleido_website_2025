@@ -1,5 +1,5 @@
 .case_std {
-  background-color: black;  
+  background-color: black;
   color: white;
   text-align: center;
 }
@@ -11,7 +11,7 @@
   color: #ffffff;
   font-family: Infra-Regular;
   line-height: 1.2;
-  margin-bottom: 2rem
+  margin-bottom: 2rem;
 }
 
 .cstds {
@@ -44,11 +44,11 @@
 .more-studies-btn {
   border: none;
   background-color: transparent;
-  color:#FF6407;
+  color: #ff6407;
   position: absolute;
   right: 0;
   bottom: -2rem;
-  border-bottom: 1px solid #FF6407;
+  border-bottom: 1px solid #ff6407;
 }
 
 .study {
@@ -103,4 +103,13 @@
   height: 400px;
   display: inline-block;
   object-fit: cover;
+}
+
+.case-study-wrapper {
+  justify-content: center;
+}
+
+.case-study-item img {
+  object-fit: contain;
+  width: 100%
 }

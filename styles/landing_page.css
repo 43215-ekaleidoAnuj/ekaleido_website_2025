@@ -106,6 +106,8 @@
   cursor: pointer;
   font-size: 16px;
   font-family: Infra-Regular;
+  text-decoration: none;
+  color: white;
 }
 
 .btn-learnmore:hover {

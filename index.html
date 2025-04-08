@@ -8,18 +8,15 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
+      crossorigin="anonymous" />
     <link
       rel="stylesheet"
       type="text/css"
-      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.min.css"
-    />
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.min.css" />
     <link
       rel="stylesheet"
       type="text/css"
-      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick-theme.min.css"
-    />
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick-theme.min.css" />
     <link rel="stylesheet" href="./styles/main.css" />
     <link rel="stylesheet" href="./styles/landing_page.css" />
     <link rel="stylesheet" href="./styles/what_we_do.css" />
@@ -48,8 +45,7 @@
           <img
             src=".\assets\images\phone2.png"
             alt="Phone"
-            class="phone-image"
-          />
+            class="phone-image" />
         </div>
         <div class="right-section">
           <h1>
@@ -62,7 +58,9 @@
             businesses engage with their customers in an exciting and memorable
             way.
           </p>
-          <button class="btn-learnmore">Learn more</button>
+          <button onclick="handleLearnMore()" class="btn-learnmore">
+            Learn more
+          </button>
         </div>
       </div>
     </section>
@@ -89,7 +87,11 @@
                   growth.
                 </p>
                 <p>Let's redefine advertising together.</p>
-                <button class="btn-learnmore-negtive">Learn more</button>
+                <button
+                  onclick="handleLearnMore()"
+                  class="btn-learnmore-negtive">
+                  Learn more
+                </button>
               </div>
             </div>
           </div>
@@ -97,7 +99,7 @@
       </div>
     </section>
 
-    <section class="services-container deskServices">
+    <section id="our_services_desk" class="services-container deskServices">
       <div class="container">
         <div class="services-wrapper">
           <h2 class="services-title">Our Services</h2>
@@ -146,25 +148,25 @@
         </div>
       </div>
     </section>
-    <section class="services-container mobServices">
+    <section id="our_services_mob" class="services-container mobServices">
       <div class="container">
         <div class="services-wrapper">
           <h2 class="services-title">Our Services</h2>
-          
+
           <div class="services-slider">
             <div class="service-itemmain">
               <div class="effect-sarah service-item">
                 <div>
                   <h2>Interactive <span>Videos</span></h2>
                   <p>
-                    As social media continues to take over the world by storm, it
-                    has become vital for businesses to stay relevant and
+                    As social media continues to take over the world by storm,
+                    it has become vital for businesses to stay relevant and
                     innovative.
                   </p>
                 </div>
               </div>
             </div>
-            
+
             <div class="service-itemmain">
               <div class="effect-sarah service-item">
                 <div>
@@ -173,7 +175,7 @@
                 </div>
               </div>
             </div>
-            
+
             <!-- Additional slides if needed -->
             <div class="service-itemmain">
               <div class="effect-sarah service-item">
@@ -183,7 +185,7 @@
                 </div>
               </div>
             </div>
-            
+
             <div class="service-itemmain">
               <div class="effect-sarah service-item">
                 <div>
@@ -192,24 +194,41 @@
                 </div>
               </div>
             </div>
-
-            
           </div>
-            <div class="custom-arrows">
-        <button class="slick-prev-custom">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M15 18L9 12L15 6" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </button>
-        <button class="slick-next-custom">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M9 6L15 12L9 18" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </button>
-      </div>
+          <div class="custom-arrows">
+            <button class="slick-prev-custom">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M15 18L9 12L15 6"
+                  stroke="#333333"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </button>
+            <button class="slick-next-custom">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M9 6L15 12L9 18"
+                  stroke="#333333"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </button>
+          </div>
         </div>
       </div>
-      
     </section>
 
     <section class="engagment_section">
@@ -219,8 +238,8 @@
             <p>
               We are Committed to delivering
               <span style="color: #ff5733; font-weight: bold">
-                high engagement </span
-              >and ensuring your brand styles top of mind
+                high engagement </span>and ensuring your brand styles top of
+              mind
             </p>
           </div>
 
@@ -256,137 +275,113 @@
             <img
               src="./assets/images/lxs.png"
               style="width: 100%; height: 'auto'"
-              alt="lxs"
-            />
+              alt="lxs" />
             <img
               src="./assets/images/colgate.png"
               style="width: 100%; height: 'auto'"
-              alt="colgate"
-            />
+              alt="colgate" />
             <img
               src="./assets/images/berger.png"
               style="width: 100%; height: 'auto'"
-              alt="colgate"
-            />
+              alt="colgate" />
             <img
               src="./assets/images/w_for_women.jpg"
               style="width: 100%; height: 'auto'"
-              alt="w_for_women"
-            />
+              alt="w_for_women" />
           </div>
           <div class="parallax-img img-down">
             <img
               src="./assets/images/tanishq.png"
               style="width: 100%; height: 'auto'"
-              alt="tanishq"
-            />
+              alt="tanishq" />
             <img
               src="./assets/images/mg.png"
               style="width: 100%; height: 'auto'"
-              alt="mg"
-            />
+              alt="mg" />
             <img
               src="./assets/images/indigo_s.png"
               style="width: 100%; height: 'auto'"
-              alt="indigo_s"
-            />
+              alt="indigo_s" />
             <img
               src="./assets/images/FNP_festive.jpg"
               style="width: 100%; height: 'auto'"
-              alt="FNP_festive"
-            />
+              alt="FNP_festive" />
           </div>
           <div class="parallax-img img-up">
             <img
               src="./assets/images/blackberrys_s.png"
               style="width: 100%; height: 'auto'"
-              alt="blackberrys"
-            />
+              alt="blackberrys" />
             <img
               src="./assets/images/godrej_s.png"
               style="width: 100%; height: 'auto'"
-              alt="godrej_s"
-            />
+              alt="godrej_s" />
             <img
               src="./assets/images/ffy.jpg"
               style="width: 100%; height: 'auto'"
-              alt="w_women"
-            />
+              alt="w_women" />
             <img
               src="./assets/images/cars24.png"
               style="width: 100%; height: 'auto'"
-              alt="cars24"
-            />
+              alt="cars24" />
           </div>
         </div>
       </div>
       <div class="imgstrip-parallax-container mobServices">
         <div class="imgstrip d-flex gap-2">
-          <div class="parallax-img ">
+          <div class="parallax-img">
             <img
               src="./assets/images/lxs.png"
               style="width: 100%; height: 'auto'"
-              alt="lxs"
-            />
+              alt="lxs" />
             <img
               src="./assets/images/colgate.png"
               style="width: 100%; height: 'auto'"
-              alt="colgate"
-            />
+              alt="colgate" />
             <img
               src="./assets/images/berger.png"
               style="width: 100%; height: 'auto'"
-              alt="colgate"
-            />
+              alt="colgate" />
             <img
               src="./assets/images/w_for_women.jpg"
               style="width: 100%; height: 'auto'"
-              alt="w_for_women"
-            />
+              alt="w_for_women" />
           </div>
-          <div class="parallax-img ">
+          <div class="parallax-img">
             <img
               src="./assets/images/tanishq.png"
               style="width: 100%; height: 'auto'"
-              alt="tanishq"
-            />
+              alt="tanishq" />
             <img
               src="./assets/images/mg.png"
               style="width: 100%; height: 'auto'"
-              alt="mg"
-            />
+              alt="mg" />
             <img
               src="./assets/images/indigo_s.png"
               style="width: 100%; height: 'auto'"
-              alt="indigo_s"
-            />
+              alt="indigo_s" />
             <img
               src="./assets/images/FNP_festive.jpg"
               style="width: 100%; height: 'auto'"
-              alt="FNP_festive"
-            />
+              alt="FNP_festive" />
           </div>
-          <div class="parallax-img ">
+          <div class="parallax-img">
             <img
               src="./assets/images/blackberrys_s.png"
               style="width: 100%; height: 'auto'"
-              alt="blackberrys"
-            />
+              alt="blackberrys" />
             <img
               src="./assets/images/godrej_s.png"
               style="width: 100%; height: 'auto'"
-              alt="godrej_s"
-            />
+              alt="godrej_s" />
             <img
               src="./assets/images/ffy.jpg"
               style="width: 100%; height: 'auto'"
-              alt="w_women"
-            />
+              alt="w_women" />
             <img
               src="./assets/images/cars24.png"
               style="width: 100%; height: 'auto'"
-              alt="cars24"
-            />
+              alt="cars24" />
           </div>
         </div>
       </div>
@@ -414,8 +409,7 @@
                   <div>
                     <img
                       src="./assets/images/FNP_festive.jpg"
-                      alt="FNP_festive"
-                    />
+                      alt="FNP_festive" />
                   </div>
                   <div>
                     <img src="./assets/images/ffy.jpg" alt="Body" />
@@ -434,20 +428,18 @@
             <img
               src="./assets/images/mobile_frame.png"
               alt="Phone"
-              class="phone-img"
-            />
+              class="phone-img" />
             <img
               id="selected-image"
               src="assets/images/w_women.png"
               alt="Screen Content"
-              class="phone-screen-img"
-            />
+              class="phone-screen-img" />
           </div>
         </div>
       </div>
     </section>
 
-    <section id="case-study" class="case_std">
+    <section id="case-study" class="case_std deskServices">
       <div class="container">
         <h2>Case Studies</h2>
         <div class="photos">
@@ -457,7 +449,69 @@
           <img src="/assets/images/hyundai.png" alt="hyundai" />
           <img src="/assets/images/wForWomen.png" alt="wForWomen" />
           <img src="/assets/images/godrej1.png" alt="godrej" />
-          <button class="more-studies-btn">More studies</button>
+          <!-- <button class="more-studies-btn">More studies</button> -->
+        </div>
+      </div>
+    </section>
+    <section id="case-study" class="case_std mobServices">
+      <div class="container">
+        <h2>Case Studies</h2>
+        <div class="row case-study-wrapper">
+          <div class="col-12">
+            <div class="case-study-slider">
+              <div class="case-study-item">
+                <img src="/assets/images/blackberrys_img.png"
+                  alt="blackberrys" />
+              </div>
+              <div class="case-study-item">
+                <img src="/assets/images/mg_motors.png" alt="mg_motors" />
+              </div>
+              <div class="case-study-item">
+                <img src="/assets/images/converse_img.png" alt="converse" />
+              </div>
+              <div class="case-study-item">
+                <img src="/assets/images/hyundai.png" alt="hyundai" />
+              </div>
+              <div class="case-study-item">
+                <img src="/assets/images/wForWomen.png" alt="wForWomen" />
+              </div>
+              <div class="case-study-item">
+                <img src="/assets/images/godrej1.png" alt="godrej" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="custom-arrows">
+          <button class="case-slick-prev-custom">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M15 18L9 12L15 6"
+                stroke="#333333"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </button>
+          <button class="case-slick-next-custom">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M9 6L15 12L9 18"
+                stroke="#333333"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </button>
         </div>
       </div>
     </section>
@@ -470,50 +524,44 @@
             for
             <span class="ldg-br">Leading Brands!</span>
           </h2>
-          <div class="deskServices ">
-            <p class="lead-content ">
+          <div class="deskServices">
+            <p class="lead-content">
               At ekaleido, we power brands with high-impact, interactive ad
               solutions
               <br />
-              that boost engagement, conversions, and brand recall. From seamless
+              that boost engagement, conversions, and brand recall. From
+              seamless
               <br />
               user journeys to measurable growth, we help brands achieve better
               <br />
               performance. better react, and better results!
             </p>
           </div>
-          
-            <div class="mobServices parasection">
-              <p class="lead-content ">
-                At ekaleido, we power brands with high-impact, interactive ad
-                solutions
-               
-                that boost engagement, conversions, and brand recall. From seamless
-               
-                user journeys to measurable growth, we help brands achieve better
-               
-                performance. better react, and better results!
-              </p>
-            </div>
-         
+
+          <div class="mobServices parasection">
+            <p class="lead-content">
+              At ekaleido, we power brands with high-impact, interactive ad
+              solutions that boost engagement, conversions, and brand recall.
+              From seamless user journeys to measurable growth, we help brands
+              achieve better performance. better react, and better results!
+            </p>
+          </div>
         </div>
 
         <div
-          class="insights p-4  deskServices"
+          class="insights p-4 deskServices"
           id="graph-section"
           style="
             opacity: 0;
             transform: translateY(20px);
             transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-          "
-        >
+          ">
           <div class="d-flex align-items-center justify-content-between">
             <h2 class="highlight">26%</h2>
             <img
               src="./assets/plyb.png"
-              alt=""
-              style="width: 30px; height: 30px"
-            />
+              alt
+              style="width: 30px; height: 30px" />
           </div>
           <p class="fx1 mb-0" style="color: #666">
             Increase in post-click engagement
@@ -526,8 +574,7 @@
               display: flex;
               align-items: center;
               justify-content: center;
-            "
-          >
+            ">
             <svg width="100%" height="100" viewBox="0 0 220 100">
               <polyline
                 id="graph-line"
@@ -539,8 +586,7 @@
                 stroke-linejoin="round"
                 stroke-dasharray="220"
                 stroke-dashoffset="220"
-                style="transition: stroke-dashoffset 1.2s ease-out"
-              />
+                style="transition: stroke-dashoffset 1.2s ease-out" />
 
               <circle
                 id="point1"
@@ -549,8 +595,7 @@
                 r="4"
                 fill="black"
                 opacity="0"
-                style="transition: opacity 0.5s ease-out 0.5s"
-              />
+                style="transition: opacity 0.5s ease-out 0.5s" />
               <circle
                 id="point2"
                 cx="100"
@@ -560,8 +605,7 @@
                 stroke="#ff6600"
                 stroke-width="1.5"
                 opacity="0"
-                style="transition: opacity 0.5s ease-out 0.7s"
-              />
+                style="transition: opacity 0.5s ease-out 0.7s" />
               <circle
                 id="point3"
                 cx="190"
@@ -569,8 +613,7 @@
                 r="4"
                 fill="black"
                 opacity="0"
-                style="transition: opacity 0.5s ease-out 0.9s"
-              />
+                style="transition: opacity 0.5s ease-out 0.9s" />
 
               <line
                 x1="100"
@@ -582,8 +625,7 @@
                 stroke-width="1"
                 opacity="0"
                 id="dashed-line"
-                style="transition: opacity 0.5s ease-out 1s"
-              />
+                style="transition: opacity 0.5s ease-out 1s" />
 
               <text x="5" y="98" font-size="10" fill="#666">week 1</text>
               <text x="85" y="100" font-size="10" fill="#666">
@@ -595,188 +637,188 @@
         </div>
 
         <div class="graphsection mobServices">
-          <div
-          class="insights p-4  "
-        
-          
-        >
-          <div class="d-flex align-items-center justify-content-between">
-            <h2 class="highlight">26%</h2>
-            <img
-              src="./assets/plyb.png"
-              alt=""
-              style="width: 30px; height: 30px"
-            />
-          </div>
-          <p class="fx1 mb-0" style="color: #666">
-            Increase in post-click engagement
-          </p>
-          <div
-            style="
-              position: relative;
-              width: 100%;
-              height: 120px;
-              display: flex;
-              align-items: center;
-              justify-content: center;
-            "
-          >
-          <div>
-            <img src="./assets/Vector.png" class="graphline" alt="">
-            <div class="d-flex graphparaph justify-content-between">
-              <p>week 1 </p>
-              <p>highest clicks </p>
-              week 2
+          <div class="insights p-4">
+            <div class="d-flex align-items-center justify-content-between">
+              <h2 class="highlight">26%</h2>
+              <img
+                src="./assets/plyb.png"
+                alt
+                style="width: 30px; height: 30px" />
+            </div>
+            <p class="fx1 mb-0" style="color: #666">
+              Increase in post-click engagement
+            </p>
+            <div
+              style="
+                position: relative;
+                width: 100%;
+                height: 120px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              ">
+              <div>
+                <img src="./assets/Vector.png" class="graphline" alt />
+                <div class="d-flex graphparaph justify-content-between">
+                  <p>week 1</p>
+                  <p>highest clicks</p>
+                  week 2
+                </div>
+              </div>
             </div>
           </div>
-        
-          </div>
-        </div>
 
-        <div class="insights p-4 " >
-          <div class="d-flex align-items-center justify-content-between">
-            <h2 class="highlight" style="color: #ff6600; font-size: 26px">
-              20%
-            </h2>
-            <img
-              src="./assets/plyb.png"
-              alt=""
-              style="width: 30px; height: 30px"
-            />
-          </div>
-          <p class="fx1 mb-0">Stronger buying intent</p>
+          <div class="insights p-4">
+            <div class="d-flex align-items-center justify-content-between">
+              <h2 class="highlight" style="color: #ff6600; font-size: 26px">
+                20%
+              </h2>
+              <img
+                src="./assets/plyb.png"
+                alt
+                style="width: 30px; height: 30px" />
+            </div>
+            <p class="fx1 mb-0">Stronger buying intent</p>
 
-          <div
-            style="
-              display: flex;
-              align-items: flex-end;
-              justify-content: space-between;
-              height: 120px;
-              margin-top: 20px;
-              padding: 0 10px;
-            "
-          >
-            <div style="text-align: center; width: 50px">
-              <div
-                class="bar"
-                style="
-                  width: 20px;
-                  height: 25px;
-                  background: #ffb38a;
-                  border-radius: 5px;
-                  margin: 0 auto;
-                  transform: scaleY(0);
-                  transition: transform 0.8s ease-out;
-                "
-              ></div>
-            </div>
-            <div style="text-align: center; width: 50px">
-              <div
-                class="bar"
-                style="
-                  width: 20px;
-                  height: 50px;
-                  background: #ff914d;
-                  border-radius: 5px;
-                  margin: 0 auto;
-                  transform: scaleY(0);
-                  transition: transform 0.8s ease-out;
-                "
-              ></div>
-            </div>
-            <div style="text-align: center; width: 50px">
-              <div
-                class="bar"
-                style="
-                  width: 20px;
-                  height: 75px;
-                  background: #ff751a;
-                  border-radius: 5px;
-                  margin: 0 auto;
-                  transform: scaleY(0);
-                  transition: transform 0.8s ease-out;
-                "
-              ></div>
-            </div>
-            <div style="text-align: center; width: 50px">
-              <div
-                class="bar"
-                style="
-                  width: 20px;
-                  height: 100px;
-                  background: #ff6600;
-                  border-radius: 5px;
-                  margin: 0 auto;
-                  transform: scaleY(0);
-                  transition: transform 0.8s ease-out;
-                "
-              ></div>
+            <div
+              style="
+                display: flex;
+                align-items: flex-end;
+                justify-content: space-between;
+                height: 120px;
+                margin-top: 20px;
+                padding: 0 10px;
+              ">
+              <div style="text-align: center; width: 50px">
+                <div
+                  class="bar"
+                  style="
+                    width: 20px;
+                    height: 25px;
+                    background: #ffb38a;
+                    border-radius: 5px;
+                    margin: 0 auto;
+                    transform: scaleY(0);
+                    transition: transform 0.8s ease-out;
+                  "></div>
+              </div>
+              <div style="text-align: center; width: 50px">
+                <div
+                  class="bar"
+                  style="
+                    width: 20px;
+                    height: 50px;
+                    background: #ff914d;
+                    border-radius: 5px;
+                    margin: 0 auto;
+                    transform: scaleY(0);
+                    transition: transform 0.8s ease-out;
+                  "></div>
+              </div>
+              <div style="text-align: center; width: 50px">
+                <div
+                  class="bar"
+                  style="
+                    width: 20px;
+                    height: 75px;
+                    background: #ff751a;
+                    border-radius: 5px;
+                    margin: 0 auto;
+                    transform: scaleY(0);
+                    transition: transform 0.8s ease-out;
+                  "></div>
+              </div>
+              <div style="text-align: center; width: 50px">
+                <div
+                  class="bar"
+                  style="
+                    width: 20px;
+                    height: 100px;
+                    background: #ff6600;
+                    border-radius: 5px;
+                    margin: 0 auto;
+                    transform: scaleY(0);
+                    transition: transform 0.8s ease-out;
+                  "></div>
+              </div>
             </div>
           </div>
         </div>
-        </div>
-        <div class="carousel-wrapper carousel-one deskServices  ">
+        <div class="carousel-wrapper carousel-one deskServices">
           <div class="carouselDriving">
             <div>
-              <img src="./assets/images/bodyshop.png" alt="Body" />
+              <img src="./assets/images/logos/bodyshop.avif" alt="bodyshop" />
             </div>
             <div>
-              <img src="./assets/images/bodyshop.png" alt="Body" />
+              <img src="./assets/images/logos/godrej.png" alt="godrej" />
             </div>
             <div>
-              <img src="./assets/images/bodyshop.png" alt="Body" />
+              <img
+                src="./assets/images/logos/blackberrys.avif"
+                alt="blackberrys" />
             </div>
             <div>
-              <img src="./assets/images/bodyshop.png" alt="Body" />
+              <img src="./assets/images/logos/clarks.avif" alt="clark" />
             </div>
             <div>
-              <img src="./assets/images/bodyshop.png" alt="Body" />
+              <img src="./assets/images/logos/indigo.avif" alt="indigo" />
             </div>
             <div>
-              <img src="./assets/images/bodyshop.png" alt="Body" />
+              <img src="./assets/images/logos/amd.avif" alt="amd" />
             </div>
             <div>
-              <img src="./assets/images/bodyshop.png" alt="Body" />
+              <img src="./assets/images/logos/asics.avif" alt="asics" />
             </div>
             <div>
-              <img src="./assets/images/bodyshop.png" alt="Body" />
+              <img src="./assets/images/logos/jed.avif" alt="jed" />
             </div>
             <div>
-              <img src="./assets/images/bodyshop.png" alt="Body" />
+              <img src="./assets/images/logos/keshking.avif" alt="keshking" />
             </div>
             <div>
-              <img src="./assets/images/bodyshop.png" alt="Body" />
+              <img src="./assets/images/logos/kult.avif" alt="kult" />
             </div>
             <div>
-              <img src="./assets/images/bodyshop.png" alt="Body" />
-            </div>
-            <div>
-              <img src="./assets/images/bodyshop.png" alt="Body" />
-            </div>
-            <div>
-              <img src="./assets/images/bodyshop.png" alt="Body" />
+              <img src="./assets/images/logos/wildstone.avif" alt="wildstone" />
             </div>
           </div>
         </div>
         <div class="carousel-wrapper-one carousel-one mobServices">
           <div class="carouselresponsivedriving carouselDriving">
             <div>
-              <img src="./assets/images/bodyshop.png" alt="Indigo" class="slider-image" />
+              <img src="./assets/images/logos/bodyshop.avif" alt="bodyshop" />
             </div>
             <div>
-              <img src="./assets/images/bodyshop.png" alt="Indigo" class="slider-image" />
+              <img src="./assets/images/logos/godrej.png" alt="godrej" />
             </div>
             <div>
-              <img src="./assets/images/bodyshop.png" alt="Indigo" class="slider-image" />
+              <img
+                src="./assets/images/logos/blackberrys.avif"
+                alt="blackberrys" />
             </div>
             <div>
-              <img src="./assets/images/bodyshop.png" alt="Indigo" class="slider-image" />
+              <img src="./assets/images/logos/clarks.avif" alt="clark" />
             </div>
             <div>
-              <img src="./assets/images/bodyshop.png" alt="Indigo" class="slider-image" />
+              <img src="./assets/images/logos/indigo.avif" alt="indigo" />
             </div>
             <div>
-            <img src="./assets/images/bodyshop.png" alt="Indigo" class="slider-image" />
+              <img src="./assets/images/logos/amd.avif" alt="amd" />
+            </div>
+            <div>
+              <img src="./assets/images/logos/asics.avif" alt="asics" />
+            </div>
+            <div>
+              <img src="./assets/images/logos/jed.avif" alt="jed" />
+            </div>
+            <div>
+              <img src="./assets/images/logos/keshking.avif" alt="keshking" />
+            </div>
+            <div>
+              <img src="./assets/images/logos/kult.avif" alt="kult" />
+            </div>
+            <div>
+              <img src="./assets/images/logos/wildstone.avif" alt="wildstone" />
             </div>
           </div>
         </div>
@@ -787,9 +829,8 @@
             </h2>
             <img
               src="./assets/plyb.png"
-              alt=""
-              style="width: 30px; height: 30px"
-            />
+              alt
+              style="width: 30px; height: 30px" />
           </div>
           <p class="fx1 mb-0">Stronger buying intent</p>
 
@@ -801,8 +842,7 @@
               height: 120px;
               margin-top: 20px;
               padding: 0 10px;
-            "
-          >
+            ">
             <div style="text-align: center; width: 50px">
               <div
                 class="bar"
@@ -814,8 +854,7 @@
                   margin: 0 auto;
                   transform: scaleY(0);
                   transition: transform 0.8s ease-out;
-                "
-              ></div>
+                "></div>
             </div>
             <div style="text-align: center; width: 50px">
               <div
@@ -828,8 +867,7 @@
                   margin: 0 auto;
                   transform: scaleY(0);
                   transition: transform 0.8s ease-out;
-                "
-              ></div>
+                "></div>
             </div>
             <div style="text-align: center; width: 50px">
               <div
@@ -842,8 +880,7 @@
                   margin: 0 auto;
                   transform: scaleY(0);
                   transition: transform 0.8s ease-out;
-                "
-              ></div>
+                "></div>
             </div>
             <div style="text-align: center; width: 50px">
               <div
@@ -856,15 +893,10 @@
                   margin: 0 auto;
                   transform: scaleY(0);
                   transition: transform 0.8s ease-out;
-                "
-              ></div>
+                "></div>
             </div>
           </div>
         </div>
-
-
-       
-       
       </div>
     </section>
 
@@ -993,103 +1025,91 @@
               </div>
 
               <div class="greatemove mobServices">
-                <div class="major-right-container ">
+                <div class="major-right-container">
                   <p class="contact-text">
                     Great! we're excited to hear from you and let's start
                     something special together. Call us for any inquiry.
                   </p>
                 </div>
               </div>
-              
             </div>
-           
-              <div class="major-right ">
-                <div class="major-right-container ">
-                  
-                  <p class="contact-text ">
-                    Great! we're excited to hear from you and let's start
-                    something special together. Call us for any inquiry.
-                  </p>
-                </div>
-                <div class="contact-right-section ">
-                  <h2>Contact</h2>
-                  <form id="contactForm" class="row">
-                    <div class="col-12">
-                      <input
-                        type="text"
-                        class="inputs"
-                        id="name"
-                        name="name"
-                        placeholder="Name"
-                        required
-                      />
-                      <input
-                        type="email"
-                        class="inputs"
-                        id="email"
-                        name="email"
-                        placeholder="Email"
-                        required
-                      />
-                    </div>
-                    <div class="col-12">
-                      <input
-                        type="tel"
-                        class="inputs"
-                        id="phone"
-                        name="phone"
-                        placeholder="Phone"
-                        required
-                      />
-                      <input
-                        type="text"
-                        class="inputs"
-                        id="subject"
-                        name="subject"
-                        placeholder="Subject"
-                        required
-                      />
-                    </div>
-                    <div class="col-12">
-                      <input
-                        type="text"
-                        class="inputs"
-                        id="company"
-                        name="company"
-                        placeholder="Company"
-                      />
-                      <input
-                        type="text"
-                        class="inputs"
-                        id="position"
-                        name="position"
-                        placeholder="Position"
-                      />
-                    </div>
-                    <textarea
-                      class="inputs"
-                      id="query"
-                      name="query"
-                      placeholder="Your Query"
-                      required
-                    ></textarea>
-                    <button type="submit" class="btn">Connect Now</button>
-                    <div id="formMessage" class="form-message"></div>
-                  </form>
-                </div>
+
+            <div class="major-right">
+              <div class="major-right-container">
+                <p class="contact-text">
+                  Great! we're excited to hear from you and let's start
+                  something special together. Call us for any inquiry.
+                </p>
               </div>
-            
-           
+              <div class="contact-right-section">
+                <h2>Contact</h2>
+                <form id="contactForm" class="row">
+                  <div class="col-12">
+                    <input
+                      type="text"
+                      class="inputs"
+                      id="name"
+                      name="name"
+                      placeholder="Name"
+                      required />
+                    <input
+                      type="email"
+                      class="inputs"
+                      id="email"
+                      name="email"
+                      placeholder="Email"
+                      required />
+                  </div>
+                  <div class="col-12">
+                    <input
+                      type="tel"
+                      class="inputs"
+                      id="phone"
+                      name="phone"
+                      placeholder="Phone"
+                      required />
+                    <input
+                      type="text"
+                      class="inputs"
+                      id="subject"
+                      name="subject"
+                      placeholder="Subject"
+                      required />
+                  </div>
+                  <div class="col-12">
+                    <input
+                      type="text"
+                      class="inputs"
+                      id="company"
+                      name="company"
+                      placeholder="Company" />
+                    <input
+                      type="text"
+                      class="inputs"
+                      id="position"
+                      name="position"
+                      placeholder="Position" />
+                  </div>
+                  <textarea
+                    class="inputs"
+                    id="query"
+                    name="query"
+                    placeholder="Your Query"
+                    required></textarea>
+                  <button type="submit" class="btn">Connect Now</button>
+                  <div id="formMessage" class="form-message"></div>
+                </form>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      
     </section>
-    
+
     <footer id="contact" class="container-footer">
       <div class="container">
         <div class="mobServices">
-          <div class="contact-right-section ">
+          <div class="contact-right-section">
             <h2>Contact</h2>
             <form id="contactForm" class="row">
               <div class="col-12">
@@ -1099,16 +1119,14 @@
                   id="name"
                   name="name"
                   placeholder="Name"
-                  required
-                />
+                  required />
                 <input
                   type="email"
                   class="inputs"
                   id="email"
                   name="email"
                   placeholder="Email"
-                  required
-                />
+                  required />
               </div>
               <div class="col-12">
                 <input
@@ -1117,16 +1135,14 @@
                   id="phone"
                   name="phone"
                   placeholder="Phone"
-                  required
-                />
+                  required />
                 <input
                   type="text"
                   class="inputs"
                   id="subject"
                   name="subject"
                   placeholder="Subject"
-                  required
-                />
+                  required />
               </div>
               <div class="col-12">
                 <input
@@ -1134,23 +1150,20 @@
                   class="inputs"
                   id="company"
                   name="company"
-                  placeholder="Company"
-                />
+                  placeholder="Company" />
                 <input
                   type="text"
                   class="inputs"
                   id="position"
                   name="position"
-                  placeholder="Position"
-                />
+                  placeholder="Position" />
               </div>
               <textarea
                 class="inputs"
                 id="query"
                 name="query"
                 placeholder="Your Query"
-                required
-              ></textarea>
+                required></textarea>
               <button type="submit" class="btn">Connect Now</button>
               <div id="formMessage" class="form-message"></div>
             </form>
@@ -1162,8 +1175,7 @@
             <img
               src="./assets/images/footer-logo.png"
               alt="eKaleido Logo"
-              class="logo"
-            />
+              class="logo" />
             <div class="social-icons">
               <a href="#" target="_blank" rel="noreferrer">
                 <img src="./assets/images/x-logo.png" alt="Twitter" />
@@ -1171,8 +1183,7 @@
               <a
                 href="https://www.instagram.com/ekaleido/"
                 target="_blank"
-                rel="noreferrer"
-              >
+                rel="noreferrer">
                 <img src="./assets/images/instagram-logo.png" alt="instagram" />
               </a>
               <a href="#" target="_blank" rel="noreferrer">
@@ -1181,8 +1192,7 @@
               <a
                 href="https://www.linkedin.com/company/ekaleido-innovation/"
                 target="_blank"
-                rel="noreferrer"
-              >
+                rel="noreferrer">
                 <img src="./assets/images/linkedin.png" alt="LinkedIn" />
               </a>
             </div>
@@ -1209,7 +1219,7 @@
               </li>
             </ul>
           </div>
-          
+
           <div class="map col-3"></div>
           <div class="content col-3">
             <p>
@@ -1218,56 +1228,25 @@
               Gurugram, Haryana 122003
             </p>
           </div>
-          
         </div>
       </div>
     </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
+      crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.min.js"></script>
     <script src="./scripts/carousel.js"></script>
     <script src="./scripts/strip.js"></script>
     <script src="./scripts/testimonial.js"></script>
     <script src="./scripts/contact.js"></script>
-
-
-    <script>
-$(document).ready(function(){
-  $('.services-slider').slick({
-    dots: false,
-    infinite: true,
-    speed: 300,
-    slidesToShow: 2,
-    centerMode: true,
-    centerPadding: '40px',
-    slidesToScroll: 2,
-    adaptiveHeight: true,
-    responsive: [
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 1,
-          centerMode: true,
-          slidesToScroll: 1
-        }
-      }
-    ]
-  });
-  $('.slick-prev-custom').click(function(){
-    $('.services-slider').slick('slickPrev');
-  });
-  
-  $('.slick-next-custom').click(function(){
-    $('.services-slider').slick('slickNext');
-  });
-});
-</script>
   </body>
 </html>
